@@ -1,4 +1,4 @@
-# Para Erica — un día especial
+# un día especial
 
 Una página de cumpleaños estática hecha con HTML, CSS y JavaScript vanilla. Funciona directamente en el navegador y se puede alojar en GitHub Pages.
 
