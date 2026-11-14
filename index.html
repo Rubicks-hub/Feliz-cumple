@@ -56,12 +56,16 @@
           <span class="letter-flower" aria-hidden="true">✳</span>
           <span class="script-label">con todo mi cariño</span>
           <h2 id="letter-title">Querida Erica,</h2>
-          <div class="letter-body">
-            <p>[Aquí puedes escribir un mensaje personal para Erica. Añade tus propias palabras, recuerdos y deseos.]</p>
-            <p>Deseo que este nuevo año esté lleno de momentos que te hagan feliz, de calma, de risas y de sueños que se hacen realidad.</p>
+          <div class="letter-content" id="letter-content" inert aria-hidden="true">
+            <div class="letter-content-inner">
+              <div class="letter-body">
+                <p>[Aquí puedes escribir un mensaje personal para Erica. Añade tus propias palabras, recuerdos y deseos.]</p>
+                <p>Deseo que este nuevo año esté lleno de momentos que te hagan feliz, de calma, de risas y de sueños que se hacen realidad.</p>
+              </div>
+              <p class="letter-signoff">Con cariño, <span>alguien que te quiere</span></p>
+            </div>
           </div>
-          <p class="letter-signoff">Con cariño, <span>alguien que te quiere</span></p>
-          <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="false" aria-controls="letter-card">Abrir la carta <span aria-hidden="true">＋</span></button>
+          <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="false" aria-controls="letter-content"><span class="letter-toggle-label">Abrir la carta</span><span class="letter-indicator" aria-hidden="true">⌄</span></button>
         </div>
           <span class="letter-side-note" aria-hidden="true">UNA NOTA ESPECIAL</span>
       </div>

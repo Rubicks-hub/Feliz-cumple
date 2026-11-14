@@ -52,10 +52,13 @@
   });
 
   const letterToggle = document.getElementById('letter-toggle');
+  const letterContent = document.getElementById('letter-content');
   letterToggle.addEventListener('click', () => {
     const open = letterToggle.getAttribute('aria-expanded') !== 'true';
     letterToggle.setAttribute('aria-expanded', String(open));
-    letterToggle.innerHTML = open ? 'Cerrar la carta <span aria-hidden="true">＋</span>' : 'Abrir la carta <span aria-hidden="true">＋</span>';
+    letterToggle.querySelector('.letter-toggle-label').textContent = open ? 'Cerrar la carta' : 'Abrir la carta';
+    letterContent.inert = !open;
+    letterContent.setAttribute('aria-hidden', String(!open));
     letterToggle.closest('.letter-card').classList.toggle('is-open', open);
   });
 
