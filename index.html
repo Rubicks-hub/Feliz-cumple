@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f3">
+  <meta name="description" content="Un regalo especial para Erica, hecho con cariño.">
+  <title>Para Erica — un día especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#celebracion">Saltar al contenido</a>
+  <main>
+    <section class="welcome" id="inicio" aria-labelledby="welcome-title">
+      <div class="welcome-orbit" aria-hidden="true"></div>
+      <span class="eyebrow welcome-eyebrow">UN DÍA PARA CELEBRAR</span>
+      <p class="welcome-intro">Un día especial para alguien especial</p>
+      <h1 id="welcome-title">ERICA<span class="title-period">.</span></h1>
+      <p class="welcome-note">Hay momentos que merecen ser recordados</p>
+      <button class="discover-button" id="discover" type="button"><span>Descubrir tu sorpresa</span><span aria-hidden="true">↘</span></button>
+      <span class="welcome-script" aria-hidden="true">con cariño</span>
+      <div class="welcome-bottom"><span>UN REGALO HECHO PARA TI</span><span>DESLIZA PARA DESCUBRIR</span></div>
+    </section>
+
+    <section class="celebration section-shell" id="celebracion" aria-labelledby="birthday-title">
+      <div class="section-kicker reveal"><span>01</span><span>HOY CELEBRAMOS</span></div>
+      <div class="celebration-copy reveal">
+        <span class="script-label">un deseo para ti</span>
+        <h2 id="birthday-title">¡Feliz cumpleaños,<br><em>Erica!</em></h2>
+        <p class="lead">Que este nuevo año te regale días luminosos, motivos para sonreír y todo eso bonito que mereces.</p>
+        <p class="small-note">Con mucho cariño, en tu día y siempre.</p>
+      </div>
+      <div class="sunmark" aria-hidden="true"><span>✳</span></div>
+      <div class="celebration-caption">UN DÍA PARA GUARDAR<br>EN EL CORAZÓN</div>
+    </section>
+
+    <section class="gallery-section section-shell" id="momentos" aria-labelledby="gallery-title">
+      <div class="section-kicker reveal"><span>02</span><span>PEQUEÑOS GRANDES MOMENTOS</span></div>
+      <div class="section-heading reveal"><div><span class="script-label">instantes que cuentan</span><h2 id="gallery-title">Una colección<br><em>de recuerdos</em></h2></div><p>Un espacio para esas fotos que hacen volver a sonreír.<br>Las imágenes se pueden cambiar cuando quieras.</p></div>
+      <div class="gallery-grid" id="gallery">
+        <button class="photo-card photo-tall reveal" type="button" data-index="0" aria-label="Abrir foto 1: un recuerdo para Erica"><span class="photo-art art-one" aria-hidden="true"><span class="art-sun"></span><span class="art-hill hill-one"></span><span class="art-hill hill-two"></span></span><span class="photo-label"><span>UN LUGAR PARA TU FOTO</span><span>01</span></span></button>
+        <button class="photo-card photo-wide reveal" type="button" data-index="1" aria-label="Abrir foto 2: un recuerdo para Erica"><span class="photo-art art-two" aria-hidden="true"><span class="art-flower">✳</span><span class="art-caption">un día bonito</span></span><span class="photo-label"><span>UN LUGAR PARA TU FOTO</span><span>02</span></span></button>
+        <button class="photo-card photo-small reveal" type="button" data-index="2" aria-label="Abrir foto 3: un recuerdo para Erica"><span class="photo-art art-three" aria-hidden="true"><span class="art-frame">✿</span></span><span class="photo-label"><span>UN LUGAR PARA TU FOTO</span><span>03</span></span></button>
+      </div>
+      <p class="gallery-hint">Selecciona una imagen para verla más grande.</p>
+    </section>
+
+    <section class="letter-section section-shell" id="carta" aria-labelledby="letter-title">
+      <div class="section-kicker reveal"><span>03</span><span>UNAS PALABRAS PARA TI</span></div>
+      <div class="letter-wrap reveal">
+        <div class="letter-card" id="letter-card">
+          <span class="letter-flower" aria-hidden="true">✳</span>
+          <span class="script-label">con todo mi cariño</span>
+          <h2 id="letter-title">Querida Erica,</h2>
+          <div class="letter-body">
+            <p>[Aquí puedes escribir un mensaje personal para Erica. Añade tus propias palabras, recuerdos y deseos.]</p>
+            <p>Deseo que este nuevo año esté lleno de momentos que te hagan feliz, de calma, de risas y de sueños que se hacen realidad.</p>
+          </div>
+          <p class="letter-signoff">Con cariño, <span>alguien que te quiere</span></p>
+          <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="false" aria-controls="letter-card">Abrir la carta <span aria-hidden="true">＋</span></button>
+        </div>
+          <span class="letter-side-note" aria-hidden="true">UNA NOTA ESPECIAL</span>
+      </div>
+    </section>
+
+    <section class="finale" id="final" aria-labelledby="final-title">
+      <div class="finale-sparkles" aria-hidden="true"><i>✳</i><i>✧</i><i>✳</i><i>·</i><i>✧</i></div>
+      <span class="script-label">que la vida te sorprenda bonito</span>
+      <h2 id="final-title">Por ti, Erica.<br><em>Hoy y siempre.</em></h2>
+      <p>Que nunca te falten razones para celebrar.</p>
+      <a href="#inicio" class="back-top">VOLVER AL COMIENZO <span aria-hidden="true">↑</span></a>
+      <span class="finale-foot">HECHO CON CARIÑO</span>
+    </section>
+  </main>
+
+  <button class="music-button" id="music-toggle" type="button" aria-label="Reproductor de música desactivado: agrega birthday-song.mp3" title="Agrega assets/music/birthday-song.mp3 para activar la música" disabled><span class="music-icon" aria-hidden="true">♫</span><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+  <audio id="birthday-audio" src="assets/music/birthday-song.mp3" preload="none" loop></audio>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de fotografías">
+    <button class="lightbox-close" type="button" aria-label="Cerrar visor">×</button>
+    <button class="lightbox-nav previous" type="button" aria-label="Fotografía anterior">‹</button>
+    <div class="lightbox-content"><div class="lightbox-art" aria-hidden="true"></div><p class="lightbox-caption"></p></div>
+    <button class="lightbox-nav next" type="button" aria-label="Fotografía siguiente">›</button>
+    <span class="lightbox-count" aria-live="polite"></span>
+  </dialog>
+</body>
+</html>
