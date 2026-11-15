@@ -5,18 +5,23 @@
   const cards = [...document.querySelectorAll('.photo-card')];
   const audio = document.getElementById('birthday-audio');
   const musicButton = document.getElementById('music-toggle');
-  const photoNames = ['Un lugar para tus recuerdos', 'Un día bonito', 'Pequeños momentos especiales'];
+  const photoNames = cards.map(card => card.dataset.caption);
   let activePhoto = 0;
   let musicReady = false;
 
+  let welcomeTransitioning = false;
   discover.addEventListener('click', () => {
+    if (welcomeTransitioning) return;
+    welcomeTransitioning = true;
     welcome.classList.add('is-leaving');
     document.body.classList.add('experience-started');
-    window.setTimeout(() => {
-      welcome.hidden = true;
-      document.getElementById('celebracion').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    }, 600);
     if (musicReady) audio.play().catch(() => {});
+  });
+  welcome.addEventListener('animationend', event => {
+    if (event.animationName !== 'welcome-out') return;
+    welcome.classList.remove('is-leaving');
+    welcomeTransitioning = false;
+    document.getElementById('celebracion').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   });
 
   const revealObserver = new IntersectionObserver(entries => {
@@ -32,9 +37,10 @@
   const setPhoto = index => {
     activePhoto = (index + cards.length) % cards.length;
     const card = cards[activePhoto];
-    const art = card.querySelector('.photo-art');
-    const dialogArt = lightbox.querySelector('.lightbox-art');
-    dialogArt.className = `lightbox-art ${art.className}`;
+    const image = card.querySelector('.photo-image');
+    const dialogImage = lightbox.querySelector('.lightbox-art');
+    dialogImage.setAttribute('src', image.getAttribute('src'));
+    dialogImage.alt = image.alt;
     lightbox.querySelector('.lightbox-caption').textContent = photoNames[activePhoto];
     lightbox.querySelector('.lightbox-count').textContent = `${String(activePhoto + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}`;
   };

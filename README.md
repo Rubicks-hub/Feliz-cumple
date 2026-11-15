@@ -1,6 +1,6 @@
-# un día especial
+# Feliz-cumple — para mamá
 
-Una página de cumpleaños estática hecha con HTML, CSS y JavaScript vanilla. Funciona directamente en el navegador y se puede alojar en GitHub Pages.
+Una dedicatoria de cumpleaños para mamá, hecha con HTML, CSS y JavaScript vanilla. Funciona directamente en el navegador y se puede alojar en GitHub Pages.
 
 ## Ejecutar localmente
 
@@ -8,9 +8,9 @@ Abre `index.html` en tu navegador. Para probarlo con un servidor local, desde la
 
 ## Personalizar
 
-- **Fotografías:** coloca tus imágenes en `assets/images/` (por ejemplo, `foto-1.jpg`). En `index.html`, cada tarjeta tiene un bloque `.photo-art`; reemplaza ese bloque por una imagen `<img src="assets/images/foto-1.jpg" alt="Descripción de la foto">`. Ajusta las proporciones con las clases `photo-tall`, `photo-wide` y `photo-small`.
+- **Fotografías:** la galería ya utiliza las imágenes guardadas en `assets/images/`. Mantén las rutas relativas y los textos `alt` descriptivos si actualizas una foto.
 - **Música:** coloca tu archivo MP3 propio o autorizado como `assets/music/birthday-song.mp3`. El botón se habilita cuando el navegador puede cargarlo; la reproducción requiere interacción.
-- **Mensaje:** edita el saludo en la sección `#celebracion` y el texto provisional dentro de `.letter-body` en `index.html`. Reemplaza también la firma genérica por la que quieras.
+- **Dedicatoria:** el saludo y la carta están en `index.html`, en `#celebracion` y `.letter-body`.
 - **Fecha y detalles:** modifica el pequeño rótulo del hero y el pie final directamente en `index.html`.
 
 ## Publicar en GitHub Pages
